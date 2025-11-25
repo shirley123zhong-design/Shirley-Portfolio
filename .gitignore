@@ -5,9 +5,8 @@
 __pycache__/
 */__pycache__/
 
-# Data files (do NOT upload LEGO dataset)
+# RAW data folder (big files – do NOT upload)
 Lego_data/
-*.csv
 
 # VS Code settings
 .vscode/
@@ -17,4 +16,5 @@ Lego_data/
 
 # Other logs
 *.log
+
 
