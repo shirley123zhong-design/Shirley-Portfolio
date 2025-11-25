@@ -4,3 +4,10 @@ scikit-learn
 dash
 dash-bootstrap-components
 plotly
+streamlit
+pandas
+sqlalchemy
+matplotlib
+prophet
+numpy
+python-dateutil
