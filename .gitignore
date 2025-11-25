@@ -1,0 +1,20 @@
+# Python venv
+.venv/
+
+# Pycache
+__pycache__/
+*/__pycache__/
+
+# Data files (do NOT upload LEGO dataset)
+Lego_data/
+*.csv
+
+# VS Code settings
+.vscode/
+
+# Streamlit cache
+.streamlit/
+
+# Other logs
+*.log
+
