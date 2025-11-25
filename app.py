@@ -1,4 +1,6 @@
 import streamlit as st
+import pandas as pd
+
 
 # ========= IMPORT YOUR EXISTING LEGO MODULES =========
 from Projects.python.data_loader import load_theme_year_stats
@@ -49,12 +51,10 @@ with st.sidebar:
 # ========= HELPER: LOAD & PREP DATA ONCE =========
 @st.cache_data(show_spinner="Loading LEGO theme-year data…")
 def load_clean_lego_data():
-    # Uses your existing pipeline from main_running.py
-    df = load_theme_year_stats()
-    df_clean = prepare_data(df)
-    df = load_theme_year_stats()
-    df_clean.to_csv("lego_theme_year_stats_clean.csv", index=False)
+    # In the deployed app, just load the cleaned CSV
+    df_clean = pd.read_csv("lego_theme_year_stats_clean.csv")
     return df_clean
+
 
 
 # ========= PAGES =========
